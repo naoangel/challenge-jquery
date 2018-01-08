@@ -5,6 +5,12 @@ $(document).ready( function(){
 
 });
 
+/*
+* Dándole un ID a cada span en su documento, 
+* removemos para que se muestre solo el indicado
+*/
+$('#flechita-cont').remove();
+$('#menu-bars').remove();
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
