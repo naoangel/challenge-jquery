@@ -40,6 +40,7 @@ function renderHighlightedRecipes(recipesArray) {
    		highlightedRecipes.push(recipesArray[i]);
    	}
    }
+  //se inserta la otra función. 
    renderRecipe(highlightedRecipes);
   //se imprimen en consola las recetas.
 	console.log('Recipes: ', recipesArray);
@@ -52,10 +53,11 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 
-/*
+
 function renderRecipe(recipe) {
 //recorriendo el array que se entregue. 	
   for(var i=0; i<recipe.length; i++){
+// Aquí se agrega el theme dado con el contenido de recetas destacadas  	
   	$('.list-recipes').append('<a class="item-recipe" href="#">'+
                               '<span class="attribution">'+
                               '<span class="title-recipe">'+ recipe[i].title + '</span>'+
@@ -70,7 +72,7 @@ function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe[i]);
 }
 
-*/
+
 
 /*
 * Función que se encarga de pintar todas las actividades
