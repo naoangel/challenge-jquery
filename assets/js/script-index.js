@@ -1,16 +1,24 @@
 $(document).ready( function(){
 
-	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
-	renderHighlightedRecipes(recipesArray);
-
-});
-
 /*
 * Dándole un ID a cada span en su documento, 
 * removemos para que se muestre solo el indicado
 */
 $('#flechita-cont').remove();
 $('#menu-bars').remove();
+printNews("NUEVAS RECETAS");
+
+	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	renderHighlightedRecipes(recipesArray);
+
+});
+
+var tituloNewsP = $('#titulo-news');
+function printNews(text){
+  $(tituloNewsP).append(text);
+
+}
+
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
